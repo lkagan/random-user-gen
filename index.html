@@ -14,7 +14,7 @@
     <img :src="picture" :alt="`${firstName} ${lastName}`" :class="gender" />
     <h1>{{ firstName }} {{ lastName }}</h1>
     <h3>Email: {{ email }}</h3>
-    <button :class="gender">Get Random User</button>
+    <button :class="gender" @click="getUser()">Get Random User</button>
 </div>
 </body>
 </html>
